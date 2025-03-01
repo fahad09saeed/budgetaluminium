@@ -37,9 +37,9 @@ export default function TopNavbar() {
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="home" spy={true} smooth={true} offset={-80}>
+              <a activeClass="active" style={{ padding: "10px 15px" }} href="/"  smooth={true} offset={-80}>
                 Home
-              </Link>
+              </a>
             </li>
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="services" spy={true} smooth={true} offset={-80}>
@@ -47,9 +47,9 @@ export default function TopNavbar() {
               </Link>
             </li>
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="projects" spy={true} smooth={true} offset={-80}>
-                Projects
-              </Link>
+              <a activeClass="active" style={{ padding: "10px 15px" }} href="/patio-covers" spy={true} smooth={true} offset={-80}>
+                Patio Covers
+              </a>
             </li>
 
             <li className="semiBold font15 pointer">

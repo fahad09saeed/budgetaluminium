@@ -1,0 +1,51 @@
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+  
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+
+  }
+  
+  .gallery-container {
+    text-align: center;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.1);
+  }
+  
+  .sectionpatio2{
+    padding-top: 0px !important;
+    min-height: auto !important;
+  }
+
+  .galleryheading{
+    margin-bottom: 20px;
+  }
+
+  .patiogallery{
+    margin-top:50px;
+    margin-bottom: 50px;
+  }

@@ -3,6 +3,9 @@ import Chatbot from "./components/Chatbot";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PatioCovers from "./components/Sections/PatioCovers.jsx"
+import Sunrooms from "./components/Sections/Sunrooms.jsx";
+import Rallings from "./components/Sections/Rallings.jsx";
+import Sleekfence from "./components/Sections/Sleekfence.jsx";
 // Screens
 import Landing from "./screens/Landing.jsx";
 
@@ -19,6 +22,9 @@ export default function App() {
       <Routes>
       <Route path="/" element={<Landing />} />
         <Route path="/patio-covers" element={<PatioCovers />} />
+        <Route path="/sun-rooms" element={<Sunrooms />} />
+        <Route path="/rallings-fence-gates" element={<Rallings />} />
+        <Route path="/sleek-fence" element={<Sleekfence />} />
       </Routes>
     </Router>
       <div>

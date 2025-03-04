@@ -24,11 +24,11 @@ export default function TopNavbar() {
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
-      <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
+      <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "40px" } : { height: "60px" }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
           
-          <img className="" src={LogoIcon} alt="logo"  style={{ height: "60px" }}/>
+          <img className="" src={LogoIcon} alt="logo"  style={{ height: "40px" }}/>
           
 
           </Link>
@@ -41,24 +41,46 @@ export default function TopNavbar() {
                 Home
               </a>
             </li>
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="services" spy={true} smooth={true} offset={-80}>
                 Services
               </Link>
-            </li>
+            </li> */}
             <li className="semiBold font15 pointer">
               <a activeClass="active" style={{ padding: "10px 15px" }} href="/patio-covers" spy={true} smooth={true} offset={-80}>
-                Patio Covers
+                PatioCovers
+              </a>
+            </li>
+            <li className="semiBold font15 pointer">
+              <a activeClass="active" style={{ padding: "10px 15px" }} href="/sun-rooms" spy={true} smooth={true} offset={-80}>
+                SunRooms
               </a>
             </li>
 
             <li className="semiBold font15 pointer">
+              <a activeClass="active" style={{ padding: "10px 15px" }} href="/sleek-fence" spy={true} smooth={true} offset={-80}>
+                RallingFence
+              </a>
+            </li>
+
+            <li className="semiBold font15 pointer">
+              <a activeClass="active" style={{ padding: "10px 15px" }} href="/rallings-fence-gates" spy={true} smooth={true} offset={-80}>
+                Sleek Fence & Gates
+              </a>
+            </li>
+            <li className="semiBold font15 pointer">
+              <a activeClass="active" style={{ padding: "10px 15px" }} href="/sleek-fence" spy={true} smooth={true} offset={-80}>
+                Sleek-Fence
+              </a>
+            </li>
+
+            {/* <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
                 Contact
               </Link>
-            </li>
+            </li> */}
           </UlWrapper>
-          <UlWrapperRight className="flexNullCenter">
+          {/* <UlWrapperRight className="flexNullCenter">
             <li className="semiBold font15 pointer">
               <a href="/" style={{ padding: "10px 30px 10px 0" }}>
                 Log in
@@ -69,7 +91,7 @@ export default function TopNavbar() {
                 Get Started
               </a>
             </li>
-          </UlWrapperRight>
+          </UlWrapperRight> */}
         </NavInner>
       </Wrapper>
     </>

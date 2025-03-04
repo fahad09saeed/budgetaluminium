@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 // Assets
 import LogoImg from "../../assets/img/logo.png";
-
+import Chatbot from "../Chatbot";
 export default function Contact() {
 
   const getCurrentYear = () => {
@@ -26,6 +26,7 @@ export default function Contact() {
             <Link className="whiteColor animate pointer font13" to="home" smooth={true} offset={-80}>
               Back to top
             </Link>
+            <Chatbot />
           </InnerWrapper>
         </div>
       </div>

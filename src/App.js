@@ -28,7 +28,6 @@ export default function App() {
       </Routes>
     </Router>
       <div>
-            <h1>Welcome to Budget Aluminium</h1>
             <Chatbot />
         </div>
     </>

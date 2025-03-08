@@ -59,20 +59,26 @@ export default function TopNavbar() {
 
             <li className="semiBold font15 pointer">
               <a activeClass="active" style={{ padding: "10px 15px" }} href="/sleek-fence" spy={true} smooth={true} offset={-80}>
-                RallingFence
+                Sleek Fence
+              </a>
+            </li>
+
+            <li className="semiBold font15 pointer">
+              <a activeClass="active" style={{ padding: "10px 15px" }} href="/home-renovation" spy={true} smooth={true} offset={-80}>
+                Home Renovation
               </a>
             </li>
 
             <li className="semiBold font15 pointer">
               <a activeClass="active" style={{ padding: "10px 15px" }} href="/rallings-fence-gates" spy={true} smooth={true} offset={-80}>
-                Sleek Fence & Gates
+                Ralling, Fence & Gates
               </a>
             </li>
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <a activeClass="active" style={{ padding: "10px 15px" }} href="/sleek-fence" spy={true} smooth={true} offset={-80}>
                 Sleek-Fence
               </a>
-            </li>
+            </li> */}
 
             {/* <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>

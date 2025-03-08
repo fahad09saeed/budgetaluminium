@@ -67,7 +67,7 @@
   .chat-footer input {
     flex: 1;
     padding: 8px;
-    border: none;
+    border: 1px solid #eaeaea;
     outline: none;
   }
   
@@ -77,5 +77,14 @@
     border: none;
     padding: 8px;
     cursor: pointer;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
   }
+
+
   

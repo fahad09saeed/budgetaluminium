@@ -13,7 +13,7 @@ export default function ClientSlider() {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 2,
     arrows: false,
     responsive: [
@@ -49,21 +49,15 @@ export default function ClientSlider() {
         <LogoWrapper className="flexCenter">
           <ImgStyle src={ClientLogo02} alt="client logo" />
         </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo03} alt="client logo" />
-        </LogoWrapper>
+       
         <LogoWrapper className="flexCenter">
           <ImgStyle src={ClientLogo04} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
           <ImgStyle src={ClientLogo05} alt="client logo" />
         </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo03} alt="client logo" />
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo04} alt="client logo" />
-        </LogoWrapper>
+      
+     
         <LogoWrapper className="flexCenter">
           <ImgStyle src={ClientLogo01} alt="client logo" />
         </LogoWrapper>

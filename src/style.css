@@ -49,3 +49,17 @@ nav ul {
     margin-top:50px;
     margin-bottom: 50px;
   }
+
+  .socialfooter{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .socialfooter img{
+    width: 34px;
+    margin-left:5px;
+  }
+
+  .btp{
+    margin-left: 5px;
+  }

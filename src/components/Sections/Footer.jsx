@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 // Assets
 import LogoImg from "../../assets/img/logo.png";
+import fb from "../../assets/img/fb.png";
+import linkedin from "../../assets/img/linkedin.png";
+import insta from "../../assets/img/insta.png";
+import yelp from "../../assets/img/yelp.png";
 import Chatbot from "../Chatbot";
 export default function Contact() {
 
@@ -22,10 +26,15 @@ export default function Contact() {
             <StyleP className="whiteColor font13">
               © {getCurrentYear()} - <span className="purpleColor font13">Budget Aluminium</span> All Right Reserved
             </StyleP>
-
-            <Link className="whiteColor animate pointer font13" to="home" smooth={true} offset={-80}>
+            <div className="socialfooter">
+            <a href="https://www.facebook.com/110798884177031" target="_blank"><img src={fb}/></a>
+            <a href="https://www.linkedin.com/company/budget-aluminium" target="_blank"><img src={linkedin}/></a>
+            <a href="https://www.instagram.com/budget_aluminium" target="_blank"><img src={insta}/></a>
+            <a href="https://www.yelp.com/biz/YuRbRaBuKqmNRRaCwl4mVw" target="_blank"><img src={yelp}/></a>
+            <Link className="whiteColor animate pointer font13 btp"  to="home" smooth={true} offset={-80}>
               Back to top
             </Link>
+            </div>
             <Chatbot />
           </InnerWrapper>
         </div>

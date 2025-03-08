@@ -10,12 +10,45 @@ import g1 from "../../assets/img/ralling1.webp";
 import g2 from "../../assets/img/ralling2.webp";
 import g3 from "../../assets/img/ralling3.webp";
 import g4 from "../../assets/img/ralling4.webp";
+import g5 from "../../assets/img/ralling5.webp";
+import g6 from "../../assets/img/ralling6.webp";
+import g7 from "../../assets/img/ralling7.webp";
+import g8 from "../../assets/img/ralling8.webp";
+import g9 from "../../assets/img/ralling9.webp";
+import g10 from "../../assets/img/ralling10.webp";
+import g11 from "../../assets/img/ralling11.webp";
+import g12 from "../../assets/img/ralling12.webp";
+import g13 from "../../assets/img/ralling13.webp";
+import g14 from "../../assets/img/ralling14.webp";
+import g15 from "../../assets/img/ralling15.webp";
+import g16 from "../../assets/img/ralling16.webp";
+import g17 from "../../assets/img/ralling17.webp";
+import g18 from "../../assets/img/ralling18.webp";
+import g19 from "../../assets/img/ralling19.webp";
+import g20 from "../../assets/img/ralling20.webp";
 import Dots from "../../assets/svg/Dots";
 const images = [
   { id: 1, src: g1, alt: "Image 1" },
   { id: 2, src: g2, alt: "Image 2" },
   { id: 3, src: g3, alt: "Image 3" },
   { id: 4, src: g4, alt: "Image 4" },
+  { id: 5, src: g5, alt: "Image 4" },
+  { id: 6, src: g6, alt: "Image 4" },
+  { id: 7, src: g7, alt: "Image 4" },
+  { id: 8, src: g8, alt: "Image 4" },
+  { id: 9, src: g9, alt: "Image 4" },
+  { id: 10, src: g10, alt: "Image 4" },
+  { id: 11, src: g11, alt: "Image 4" },
+  { id: 12, src: g12, alt: "Image 4" },
+  { id: 13, src: g13, alt: "Image 4" },
+  { id: 14, src: g14, alt: "Image 4" },
+  { id: 15, src: g15, alt: "Image 4" },
+  { id: 16, src: g16, alt: "Image 4" },
+  { id: 17, src: g17, alt: "Image 4" },
+  { id: 18, src: g18, alt: "Image 4" },
+  { id: 19, src: g19, alt: "Image 4" },
+  { id: 20, src: g20, alt: "Image 4" },
+
 ];
 
 const Rallings = () => {

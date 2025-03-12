@@ -78,6 +78,14 @@ const Chatbot = () => {
         <button type="submit">Submit</button>
       </form>
       {response && <p><strong>AI Response:</strong> {response}</p>}
+      <div>
+      {messages.map((message, index) => (
+        <div key={index}>
+          <h3>{message.role}</h3>
+          <p>{message.content}</p>
+        </div>
+      ))}
+    </div>
             {/* <input
               type="text"
               placeholder="Type a message..."

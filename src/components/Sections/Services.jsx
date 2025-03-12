@@ -10,6 +10,10 @@ import AddImage2 from "../../assets/img/sleekfence.webp";
 import AddImage3 from "../../assets/img/sleekfence.webp";
 import AddImage4 from "../../assets/img/sleekfence.webp";
 
+import AwningIcon from "../../assets/img/awning.svg";
+import FenceIcon from "../../assets/img/fence.svg";
+import PatioIcon from "../../assets/img/patiocover.svg";
+import RallingIcon from "../../assets/img/ralling.svg";
 export default function Services() {
   return (
     <Wrapper id="services">
@@ -31,27 +35,27 @@ export default function Services() {
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
-                
+                icon={PatioIcon}
                 title="Patio Covers"
-                subtitle="patio covers text here."
+                subtitle="Enhance your outdoor space with durable patio covers in Canada, providing year-round protection and style. Choose from aluminum, wood, or polycarbonate for a perfect blend of comfort and durability."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-               
+                icon={RallingIcon}
                 title="Ralling"
-                subtitle="ralling text here."
+                subtitle="Enhance safety and style with premium railings in Canada, available in glass, aluminum, and steel. Our durable and modern designs add elegance to balconies, decks, and staircases."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                
+                icon={AwningIcon}
                 title="Awnings"
-                subtitle="awning text here."
+                subtitle="Upgrade your outdoor space with high-quality awnings in Canada, offering shade and weather protection. Choose from retractable, fixed, or motorized designs for style and convenience."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox  title="Fence" subtitle="fence text here." />
+              <ServiceBox icon={FenceIcon}  title="Fence" subtitle="Enhance privacy and security with durable fences in Canada, available in wood, vinyl, and metal. Our stylish and sturdy designs add value to any property." />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>

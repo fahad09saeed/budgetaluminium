@@ -1,36 +1,33 @@
 import React from "react";
 import styled from "styled-components";
 // Assets
-import RollerIcon from "../../assets/svg/Services/RollerIcon";
-import MonitorIcon from "../../assets/svg/Services/MonitorIcon";
-import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
-import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
+
 
 export default function ServiceBox({icon, title, subtitle}) {
-  let getIcon;
+  // let getIcon;
 
-  switch (icon) {
-    case "roller":
-      getIcon = <RollerIcon />;
-      break;
-    case "monitor":
-      getIcon = <MonitorIcon />;
-      break;
-    case "browser":
-      getIcon = <BrowserIcon />;
-      break;
-    case "printer":
-      getIcon = <PrinterIcon />;
-      break;
-    default:
-      getIcon = <RollerIcon />;
-      break;
-  }
+  // switch (icon) {
+  //   case "awning":
+  //     getIcon = <AwningIcon />;
+  //     break;
+  //   case "fence":
+  //     getIcon = <FenceIcon />;
+  //     break;
+  //   case "patio":
+  //     getIcon = <PatioIcon />;
+  //     break;
+  //   case "ralling":
+  //     getIcon = <RallingIcon />;
+  //     break;
+  //   default:
+  //     getIcon = <AwningIcon />;
+  //     break;
+  // }
 
 
   return (
     <Wrapper className="flex flexColumn">
-      <IconStyle>{getIcon}</IconStyle>
+     <img src={icon} height="100px" />
       <TitleStyle className="font20 extraBold">{title}</TitleStyle>
       <SubtitleStyle className="font13">{subtitle}</SubtitleStyle>
     </Wrapper>

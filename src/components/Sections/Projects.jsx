@@ -23,7 +23,7 @@ export default function Projects() {
             <AddLeft>
               <AddLeftInner>
                 <ImgWrapper className="flexCenter">
-                  <img className="radius8" src={AddImage2} alt="add" style={{height:"500px"}} />
+                  <img className="radius8" src={AddImage2} alt="add" style={{height:"400px"}} />
                 </ImgWrapper>
               </AddLeftInner>
             </AddLeft>
@@ -72,7 +72,7 @@ export default function Projects() {
             <AddLeft>
               <AddLeftInner>
                 <ImgWrapper className="flexCenter">
-                  <img className="radius8" src={AddImage3} alt="add" style={{height:"500px"}} />
+                  <img className="radius8" src={AddImage3} alt="add" style={{height:"300px"}} />
                 </ImgWrapper>
               </AddLeftInner>
             </AddLeft>

@@ -27,6 +27,20 @@ import g18 from "../../assets/img/ralling18.webp";
 import g19 from "../../assets/img/ralling19.webp";
 import g20 from "../../assets/img/ralling20.webp";
 import Dots from "../../assets/svg/Dots";
+
+import LightGallery from 'lightgallery/react';
+
+// import styles
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+
+
+
+// import plugins if you need
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+
 const images = [
   { id: 1, src: g1, alt: "Image 1" },
   { id: 2, src: g2, alt: "Image 2" },
@@ -50,6 +64,10 @@ const images = [
   { id: 20, src: g20, alt: "Image 4" },
 
 ];
+
+const onInit = () => {
+  console.log('lightGallery has been initialized');
+};
 
 const Rallings = () => {
   return (
@@ -90,9 +108,20 @@ const Rallings = () => {
     <div className="gallery-container patiogallery">
       <h2 className='galleryheading'>PHOTO GALLERY</h2>
       <div className="gallery">
-        {images.map(image => (
-          <img key={image.id} src={image.src} alt={image.alt} className="gallery-img" />
+      <LightGallery
+                onInit={onInit}
+                speed={500}
+                plugins={[lgThumbnail, lgZoom]}
+            >
+            {images.map(image => (
+               <a  href={image.src}>
+                    <img key={image.id} src={image.src} alt={image.alt} className="gallery-img" />
+                </a>
+          
         ))}
+               
+              
+            </LightGallery>
       </div>
     </div>
     <Footer/>

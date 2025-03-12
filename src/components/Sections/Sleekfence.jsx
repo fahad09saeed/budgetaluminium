@@ -11,12 +11,30 @@ import g2 from "../../assets/img/sleek3.webp";
 import g3 from "../../assets/img/sleek4.webp";
 import g4 from "../../assets/img/sleek5.webp";
 import Dots from "../../assets/svg/Dots";
+
+import LightGallery from 'lightgallery/react';
+
+// import styles
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+
+
+
+// import plugins if you need
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+
 const images = [
   { id: 1, src: g1, alt: "Image 1" },
   { id: 2, src: g2, alt: "Image 2" },
   { id: 3, src: g3, alt: "Image 3" },
   { id: 4, src: g4, alt: "Image 4" },
 ];
+
+const onInit = () => {
+  console.log('lightGallery has been initialized');
+};
 
 const Sleekfence = () => {
   return (
@@ -71,9 +89,20 @@ const Sleekfence = () => {
     <div className="gallery-container patiogallery">
       <h2 className='galleryheading'>PHOTO GALLERY</h2>
       <div className="gallery">
-        {images.map(image => (
-          <img key={image.id} src={image.src} alt={image.alt} className="gallery-img" />
+      <LightGallery
+                onInit={onInit}
+                speed={500}
+                plugins={[lgThumbnail, lgZoom]}
+            >
+            {images.map(image => (
+               <a  href={image.src}>
+                    <img key={image.id} src={image.src} alt={image.alt} className="gallery-img" />
+                </a>
+          
         ))}
+               
+              
+            </LightGallery>
       </div>
     </div>
     <Footer/>

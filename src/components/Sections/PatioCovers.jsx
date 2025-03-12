@@ -5,6 +5,21 @@ import TopNavbar from "../Nav/TopNavbar";
 import Header from "./Header";
 import Footer from "./Footer";
 import '../../style.css';
+import LightGallery from 'lightgallery/react';
+
+// import styles
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+
+// If you want you can use SCSS instead of css
+// import 'lightgallery/scss/lightgallery.scss';
+// import 'lightgallery/scss/lg-zoom.scss';
+
+// import plugins if you need
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+
 import HeaderImage from "../../assets/img/awning1.webp";
 import g1 from "../../assets/img/awning2.webp";
 import g2 from "../../assets/img/awning1.webp";
@@ -59,6 +74,10 @@ const images = [
   { id: 24, src: g24, alt: "Image 24" },
   { id: 25, src: g25, alt: "Image 25" },
 ];
+
+const onInit = () => {
+        console.log('lightGallery has been initialized');
+    };
 
 const PatioCovers = () => {
   return (
@@ -132,9 +151,21 @@ const PatioCovers = () => {
     <div className="gallery-container patiogallery">
       <h2 className='galleryheading'>Patio Cover, Awnings</h2>
       <div className="gallery">
-        {images.map(image => (
-          <img key={image.id} src={image.src} alt={image.alt} className="gallery-img" />
+      <LightGallery
+                onInit={onInit}
+                speed={500}
+                plugins={[lgThumbnail, lgZoom]}
+            >
+            {images.map(image => (
+               <a  href={image.src}>
+                    <img key={image.id} src={image.src} alt={image.alt} className="gallery-img" />
+                </a>
+          
         ))}
+               
+              
+            </LightGallery>
+      
       </div>
     </div>
     <Footer/>

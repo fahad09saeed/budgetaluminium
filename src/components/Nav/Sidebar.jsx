@@ -9,12 +9,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
     <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
-        <div className="flexNullCenter">
-          <LogoIcon />
-          <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            fanatic
-          </h1>
-        </div>
+        
         <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
           <CloseIcon />
         </CloseBtn>
@@ -22,102 +17,74 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
 
       <UlStyle className="flexNullCenter flexColumn">
         <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Home
-          </Link>
+        <a  style={{ padding: "10px 15px" }} href="/"   offset={-80}
+        onClick={() => toggleSidebar(!sidebarOpen)}
+        activeClass="active"
+        className="whiteColor"
+       
+        >
+                Home
+              </a>
+          
         </li>
         <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="services"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Services
-          </Link>
+        <a href="/patio-covers" 
+        onClick={() => toggleSidebar(!sidebarOpen)}
+        activeClass="active"
+        className="whiteColor"
+        style={{ padding: "10px 15px" }}
+        >
+                Patio Covers
+              </a>
+
+          
         </li>
         <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Projects
-          </Link>
+        <a  href="/sun-rooms" offset={-80}
+         onClick={() => toggleSidebar(!sidebarOpen)}
+         activeClass="active"
+         className="whiteColor"
+         style={{ padding: "10px 15px" }}
+        >
+                SunRooms
+              </a>
+          
         </li>
         <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="blog"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Blog
-          </Link>
+        <a  href="/sleek-fence"
+         onClick={() => toggleSidebar(!sidebarOpen)}
+         activeClass="active"
+         className="whiteColor"
+         style={{ padding: "10px 15px" }}
+         >
+                Sleek Fence
+              </a>
+         
         </li>
         <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="pricing"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Pricing
-          </Link>
+        <a href="/home-renovation"
+        onClick={() => toggleSidebar(!sidebarOpen)}
+        activeClass="active"
+        className="whiteColor"
+        style={{ padding: "10px 15px" }}
+        >
+                Home Renovation
+              </a>
+         
         </li>
         <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Contact
-          </Link>
+        <a href="/rallings-fence-gates"  
+         onClick={() => toggleSidebar(!sidebarOpen)}
+         activeClass="active"
+         className="whiteColor"
+         style={{ padding: "10px 15px" }}
+        >
+                Ralling, Fence & Gates
+              </a>
+         
         </li>
       </UlStyle>
-      <UlStyle className="flexSpaceCenter">
-        <li className="semiBold font15 pointer">
-          <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
-            Log in
-          </a>
-        </li>
-        <li className="semiBold font15 pointer flexCenter">
-          <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
-            Get Started
-          </a>
-        </li>
-      </UlStyle>
+     
     </Wrapper>
   );
 }

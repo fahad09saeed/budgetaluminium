@@ -63,3 +63,16 @@ nav ul {
   .btp{
     margin-left: 5px;
   }
+
+  @media (max-width: 480px) {
+
+  .flexCenter img{
+    height: auto !important;
+  }
+
+  img.homelogo{
+    height: 30px !important;
+  }
+
+  
+}

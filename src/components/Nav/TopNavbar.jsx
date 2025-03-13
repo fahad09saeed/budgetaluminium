@@ -28,7 +28,7 @@ export default function TopNavbar() {
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
           
-          <img className="" src={LogoIcon} alt="logo"  style={{ height: "40px" }}/>
+          <img className="homelogo" src={LogoIcon} alt="logo"  style={{ height: "40px" }}/>
           
 
           </Link>
@@ -37,7 +37,7 @@ export default function TopNavbar() {
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
             <li className="semiBold font15 pointer">
-              <a activeClass="active" style={{ padding: "10px 15px" }} href="/"  smooth={true} offset={-80}>
+              <a className="active" style={{ padding: "10px 15px" }} href="/"   offset={-80}>
                 Home
               </a>
             </li>
@@ -47,30 +47,30 @@ export default function TopNavbar() {
               </Link>
             </li> */}
             <li className="semiBold font15 pointer">
-              <a activeClass="active" style={{ padding: "10px 15px" }} href="/patio-covers" spy={true} smooth={true} offset={-80}>
+              <a className="active" style={{ padding: "10px 15px" }} href="/patio-covers" offset={-80}>
                 PatioCovers
               </a>
             </li>
             <li className="semiBold font15 pointer">
-              <a activeClass="active" style={{ padding: "10px 15px" }} href="/sun-rooms" spy={true} smooth={true} offset={-80}>
+              <a className="active" style={{ padding: "10px 15px" }} href="/sun-rooms" offset={-80}>
                 SunRooms
               </a>
             </li>
 
             <li className="semiBold font15 pointer">
-              <a activeClass="active" style={{ padding: "10px 15px" }} href="/sleek-fence" spy={true} smooth={true} offset={-80}>
+              <a className="active" style={{ padding: "10px 15px" }} href="/sleek-fence" offset={-80}>
                 Sleek Fence
               </a>
             </li>
 
             <li className="semiBold font15 pointer">
-              <a activeClass="active" style={{ padding: "10px 15px" }} href="/home-renovation" spy={true} smooth={true} offset={-80}>
+              <a className="active" style={{ padding: "10px 15px" }} href="/home-renovation"  offset={-80}>
                 Home Renovation
               </a>
             </li>
 
             <li className="semiBold font15 pointer">
-              <a activeClass="active" style={{ padding: "10px 15px" }} href="/rallings-fence-gates" spy={true} smooth={true} offset={-80}>
+              <a className="active" style={{ padding: "10px 15px" }} href="/rallings-fence-gates"  offset={-80}>
                 Ralling, Fence & Gates
               </a>
             </li>

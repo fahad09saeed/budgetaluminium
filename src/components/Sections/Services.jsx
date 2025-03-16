@@ -5,10 +5,10 @@ import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
 // Assets
-import AddImage1 from "../../assets/img/sleekfence.webp";
-import AddImage2 from "../../assets/img/sleekfence.webp";
-import AddImage3 from "../../assets/img/sleekfence.webp";
-import AddImage4 from "../../assets/img/sleekfence.webp";
+import AddImage1 from "../../assets/img/finance.jpg";
+import AddImage2 from "../../assets/img/finance2.webp";
+import AddImage3 from "../../assets/img/finance3.jpg";
+import AddImage4 from "../../assets/img/finance4.jpg";
 
 import AwningIcon from "../../assets/img/awning.svg";
 import FenceIcon from "../../assets/img/fence.svg";
@@ -63,25 +63,23 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A Few Specialized Works</h4>
-                <h2 className="font40 extraBold">We offers SLEEKFENCE modern horizontal fencing</h2>
+                <h4 className="font15 semiBold">Installment Payment Plan</h4>
+                <h2 className="font40 extraBold">We also provide Installment Payment Plan Services</h2>
                 <p className="font12">
-                Sleek Modern Fence, Aluminum Slat Fence, Horizontal Fencing, Black Fence, Contemporary Fence, Spaced Slat Fence, Horizontal Slat Fence, Black Privacy Fence, Aluminum Gate, Pedestrian Gate.
+                Get flexible and affordable installment payment plans with Financeit.ca, making your purchases stress-free and budget-friendly.
                 </p>
                 <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
                   <div style={{ width: "190px" }}>
-                    <FullButton title="Get Started" action={() => alert("clicked")} />
+                    <a href="https://www.financeit.ca/s/UzAeVA" target="_blank" >Apply Now</a>
                   </div>
-                  <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} border />
-                  </div>
+              
                 </ButtonsRow>
               </AddLeft>
               <AddRight>
                 <AddRightInner>
                   <div className="flexNullCenter">
                     <AddImgWrapp1 className="flexCenter">
-                      <img src={AddImage1} style={{height:"400px"}} alt="office" />
+                      <img src={AddImage1} style={{height:"300px"}} alt="office" />
                     </AddImgWrapp1>
                     <AddImgWrapp2>
                       <img src={AddImage2} alt="office" />

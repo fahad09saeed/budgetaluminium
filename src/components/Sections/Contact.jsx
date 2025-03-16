@@ -21,12 +21,24 @@ export default function Contact() {
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Form>
-                <label className="font13">First name:</label>
+                <label className="font13">Full name:</label>
                 <input type="text" id="fname" name="fname" className="font20 extraBold" />
                 <label className="font13">Email:</label>
                 <input type="text" id="email" name="email" className="font20 extraBold" />
-                <label className="font13">Subject:</label>
-                <input type="text" id="subject" name="subject" className="font20 extraBold" />
+                <label className="font13">Services Required:</label>
+                <select name="services" className="font20 extraBold" >
+                  <option selected disabled>Select Services</option>
+                  <option value="Patio Covers">Patio Covers</option>
+                  <option value="Home Renovation">Home Renovation</option>
+                  <option value="Ralling">Ralling</option>
+                  <option value="Gates">Gates</option>
+                  <option value="Decks">Decks</option>
+                  <option value="Covers">Covers</option>
+                  <option value="Fence">Fence</option>
+                  <option value="Window">Window</option>
+                  <option value="Washroom">Washroom</option>
+                  <option value="Kitchen">Kitchen</option>
+                  </select>
                 <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
               </Form>
               <SumbitWrapper className="flex">

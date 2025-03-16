@@ -57,11 +57,11 @@ export default function TopNavbar() {
               </a>
             </li>
 
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <a className="active" style={{ padding: "10px 15px" }} href="/sleek-fence" offset={-80}>
                 Sleek Fence
               </a>
-            </li>
+            </li> */}
 
             <li className="semiBold font15 pointer">
               <a className="active" style={{ padding: "10px 15px" }} href="/home-renovation"  offset={-80}>

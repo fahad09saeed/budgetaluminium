@@ -7,6 +7,7 @@ import ClientLogo02 from "../../assets/img/certif.webp";
 import ClientLogo03 from "../../assets/img/budgetcircle.webp";
 import ClientLogo04 from "../../assets/img/2022cert.webp";
 import ClientLogo05 from "../../assets/img/trainedsleek.webp";
+import ClientLogo06 from "../../assets/img/worksafe.webp";
 
 
 export default function ClientSlider() {
@@ -59,7 +60,7 @@ export default function ClientSlider() {
       
      
         <LogoWrapper className="flexCenter">
-          <ImgStyle src={ClientLogo01} alt="client logo" />
+          <ImgStyle src={ClientLogo06} alt="client logo" />
         </LogoWrapper>
         <LogoWrapper className="flexCenter">
           <ImgStyle src={ClientLogo02} alt="client logo" />

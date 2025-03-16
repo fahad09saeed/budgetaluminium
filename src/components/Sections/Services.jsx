@@ -50,8 +50,8 @@ export default function Services() {
             <ServiceBoxWrapper>
               <ServiceBox
                 icon={AwningIcon}
-                title="Awnings"
-                subtitle="Upgrade your outdoor space with high-quality awnings in Canada, offering shade and weather protection. Choose from retractable, fixed, or motorized designs for style and convenience."
+                title="Deck & Cover"
+                subtitle="Enhance your outdoor space with professional Deck & Cover services in Canada, offering durable and stylish solutions. From custom decks to weather-resistant patio covers, we ensure quality craftsmanship and lasting beauty."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>

@@ -50,7 +50,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
               </a>
           
         </li>
-        <li className="semiBold font15 pointer">
+        {/* <li className="semiBold font15 pointer">
         <a  href="/sleek-fence"
          onClick={() => toggleSidebar(!sidebarOpen)}
          activeClass="active"
@@ -60,7 +60,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
                 Sleek Fence
               </a>
          
-        </li>
+        </li> */}
         <li className="semiBold font15 pointer">
         <a href="/home-renovation"
         onClick={() => toggleSidebar(!sidebarOpen)}

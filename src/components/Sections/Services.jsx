@@ -10,7 +10,7 @@ import AddImage2 from "../../assets/img/finance2.webp";
 import AddImage3 from "../../assets/img/finance3.jpg";
 import AddImage4 from "../../assets/img/finance4.jpg";
 
-import AwningIcon from "../../assets/img/awning.svg";
+import AwningIcon from "../../assets/img/deck.png";
 import FenceIcon from "../../assets/img/fence.svg";
 import PatioIcon from "../../assets/img/patiocover.svg";
 import RallingIcon from "../../assets/img/ralling.svg";

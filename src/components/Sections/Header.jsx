@@ -30,14 +30,14 @@ export default function Header() {
           {/* <VideoContainer className="radius8"  style={{zIndex: 9}}> */}
         <Vimeo
           background={false}
-          style={{zIndex: 9, position: "relative", width: "300px"}}
+          style={{zIndex: 9, position: "relative", width: "550px"}}
           loop={true}
           responsive
           video="https://vimeo.com/799226493/3439853f00"
           className="radius8"
         />
       {/* </VideoContainer> */}
-          <QuoteWrapper className="flexCenter darkBg radius8">
+          {/* <QuoteWrapper className="flexCenter darkBg radius8">
             <QuotesWrapper>
               <QuotesIcon />
             </QuotesWrapper>
@@ -47,7 +47,7 @@ export default function Header() {
               </p>
               <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>CEO Budget Aluminium</p>
             </div>
-          </QuoteWrapper>
+          </QuoteWrapper> */}
           <DotsWrapper>
             <Dots />
           </DotsWrapper>

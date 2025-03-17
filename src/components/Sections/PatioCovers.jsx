@@ -19,7 +19,9 @@ import 'lightgallery/css/lg-thumbnail.css';
 // import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
-
+import benefit from "../../assets/img/benefit.webp";
+import specification from "../../assets/img/specification.webp";
+import doorawning from "../../assets/img/doorawning.webp";
 import HeaderImage from "../../assets/img/awning1.webp";
 import g1 from "../../assets/img/awning2.webp";
 import g2 from "../../assets/img/awning1.webp";
@@ -148,8 +150,58 @@ const PatioCovers = () => {
         </div>
       </RightSide>
     </Wrapper>
-    <div className="gallery-container patiogallery">
+    
+    <div className="gallery-container patiogallery container">
       <h2 className='galleryheading'>Patio Cover, Awnings</h2>
+      <Container>
+      <Column>
+        <Image src={benefit} alt="Placeholder" />
+        <Heading>Benefits</Heading>
+        <Text>Backyards are becoming more like outdoor living spaces with patio furniture, BBQ, fireplaces.. One great addition to put the finishing touch on your outdoor living space is a patio cover.
+          
+          
+        </Text>
+        <br/>
+        <ul class="patiobenefit">
+            <li>Extra Added Living Space</li>
+            <li>Great for Outdoor Entertaining</li>
+            <li>Bring you closer to nature</li>
+            <li>Custom Designed Aluminum /Glass/Polycarbonate/ Acrylic Awnings</li>
+            <li>Patio Covers/ Carports / Railings</li>
+            <li>Professional Installation Services</li>
+          </ul>
+          <br/>
+          <Text>If you choose to sell your home, a quality and stylish patio cover will add great value.</Text>
+      </Column>
+
+      <Column>
+        <Image src={specification} alt="Placeholder" />
+        <Heading>Specification</Heading>
+        <Text>
+          <ul className='patiobenefit'>
+            <li>Custom Aluminum W-panels </li>
+            <li>Tempered  glass (clear or tinted) </li>
+            <li>Poly-carbonate multi-layered Sheet</li>
+            <li>Acrylic Multi layer Sheet</li>
+            <li>Insulated Panel</li>
+            <li>Customized to meet size and style</li>
+          </ul>
+        </Text>
+      </Column>
+
+      <Column>
+        <Image src={doorawning} alt="Placeholder" />
+        <Heading>Window / Door AWNINGS</Heading>
+        <Text>
+          <ul className='patiobenefit'>
+            <li>Durable Polycarbonate Panels</li>
+            <li>Long Life Span</li>
+            <li>Perfect Over Doors and/or Windows</li>
+            <li>Available in a 2' or 3' Projection</li>
+          </ul>
+        </Text>
+      </Column>
+    </Container>
       <div className="gallery">
       <LightGallery
                 onInit={onInit}
@@ -176,6 +228,48 @@ const PatioCovers = () => {
 
 
 export default PatioCovers;
+
+const Container = styled.div`
+  display: flex;
+
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+const Column = styled.div`
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+`;
+
+const Heading = styled.h3`
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+`;
+
+const Text = styled.p`
+  font-size: 16px;
+  color: #666;
+`;
 
 const Wrapper = styled.section`
   padding-top: 80px;

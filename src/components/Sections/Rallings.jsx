@@ -26,6 +26,28 @@ import g17 from "../../assets/img/ralling17.webp";
 import g18 from "../../assets/img/ralling18.webp";
 import g19 from "../../assets/img/ralling19.webp";
 import g20 from "../../assets/img/ralling20.webp";
+import g21 from "../../assets/img/gallery/ralling/gallery5.jpg";
+import g22 from "../../assets/img/gallery/ralling/gallery8.jpg";
+import g23 from "../../assets/img/gallery/ralling/gallery9.jpg";
+import g24 from "../../assets/img/gallery/ralling/g15.jpg";
+import g25 from "../../assets/img/gallery/ralling/g35.jpg";
+import g26 from "../../assets/img/gallery/ralling/g37.jpg";
+import g27 from "../../assets/img/gallery/ralling/g38.jpg";
+import g28 from "../../assets/img/gallery/ralling/g39.jpg";
+import g29 from "../../assets/img/gallery/ralling/g40.jpg";
+import g30 from "../../assets/img/gallery/ralling/g41.jpg";
+import g31 from "../../assets/img/gallery/ralling/g46.jpg";
+import g32 from "../../assets/img/gallery/ralling/g47.jpg";
+import g33 from "../../assets/img/gallery/ralling/g48.jpg";
+import g34 from "../../assets/img/gallery/fence/gallery10.jpg";
+import g35 from "../../assets/img/gallery/fence/gallery11.jpg";
+import g36 from "../../assets/img/gallery/fence/gallery12.jpg";
+import g37 from "../../assets/img/gallery/fence/g14.jpg";
+import g38 from "../../assets/img/gallery/fence/g21.jpg";
+import g39 from "../../assets/img/gallery/fence/g22.jpg";
+import g40 from "../../assets/img/gallery/fence/g27.jpg";
+import g41 from "../../assets/img/gallery/fence/g28.jpg";
+import g42 from "../../assets/img/gallery/fence/g29.jpg";
 import Dots from "../../assets/svg/Dots";
 
 import LightGallery from 'lightgallery/react';
@@ -62,6 +84,28 @@ const images = [
   { id: 18, src: g18, alt: "Image 4" },
   { id: 19, src: g19, alt: "Image 4" },
   { id: 20, src: g20, alt: "Image 4" },
+  { id: 21, src: g21, alt: "Image 4" },
+  { id: 22, src: g22, alt: "Image 4" },
+  { id: 23, src: g23, alt: "Image 4" },
+  { id: 24, src: g24, alt: "Image 4" },
+  { id: 25, src: g25, alt: "Image 4" },
+  { id: 26, src: g26, alt: "Image 4" },
+  { id: 27, src: g27, alt: "Image 4" },
+  { id: 28, src: g28, alt: "Image 4" },
+  { id: 29, src: g29, alt: "Image 4" },
+  { id: 30, src: g30, alt: "Image 4" },
+  { id: 31, src: g31, alt: "Image 4" },
+  { id: 32, src: g32, alt: "Image 4" },
+  { id: 33, src: g33, alt: "Image 4" },
+  { id: 34, src: g34, alt: "Image 4" },
+  { id: 35, src: g35, alt: "Image 4" },
+  { id: 36, src: g36, alt: "Image 4" },
+  { id: 37, src: g37, alt: "Image 4" },
+  { id: 38, src: g38, alt: "Image 4" },
+  { id: 39, src: g39, alt: "Image 4" },
+  { id: 40, src: g40, alt: "Image 4" },
+  { id: 41, src: g41, alt: "Image 4" },
+  { id: 42, src: g42, alt: "Image 4" },
 
 ];
 

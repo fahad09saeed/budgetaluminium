@@ -48,12 +48,12 @@ export default function TopNavbar() {
             </li> */}
             <li className="semiBold font15 pointer">
               <a className="active" style={{ padding: "10px 15px" }} href="/patio-covers" offset={-80}>
-                PatioCovers
+                Patio Covers
               </a>
             </li>
             <li className="semiBold font15 pointer">
               <a className="active" style={{ padding: "10px 15px" }} href="/sun-rooms" offset={-80}>
-                SunRooms
+                Sun Rooms
               </a>
             </li>
 

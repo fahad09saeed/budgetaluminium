@@ -18,7 +18,7 @@ export default function TopNavbar() {
       window.removeEventListener("scroll", () => setY(window.scrollY));
     };
   }, [y]);
-
+  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -26,21 +26,21 @@ export default function TopNavbar() {
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "40px" } : { height: "60px" }}>
         <NavInner className="container flexSpaceCenter">
-          <Link className="pointer flexNullCenter" to="home" smooth={true}>
+          <a href="/" className="pointer flexNullCenter" smooth={true}>
           
           <img className="homelogo" src={LogoIcon} alt="logo"  style={{ height: "40px" }}/>
           
 
-          </Link>
+          </a>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
             <BurgerIcon />
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <a className="active" style={{ padding: "10px 15px" }} href="/"   offset={-80}>
                 Home
               </a>
-            </li>
+            </li> */}
             {/* <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="services" spy={true} smooth={true} offset={-80}>
                 Services
@@ -74,6 +74,20 @@ export default function TopNavbar() {
                 Ralling, Fence & Gates
               </a>
             </li>
+            <li 
+          className="dropdown"
+          onMouseEnter={() => setOpen(true)}
+          onMouseLeave={() => setOpen(false)}
+        >
+          More ▼
+          {open && (
+            <ul className="dropdown-menu">
+              <li><a href="/maintenance">Maintenance & Care</a></li>
+              <li><a href="/warranty">Warranty & Liability</a></li>
+         
+            </ul>
+          )}
+        </li>
             {/* <li className="semiBold font15 pointer">
               <a activeClass="active" style={{ padding: "10px 15px" }} href="/sleek-fence" spy={true} smooth={true} offset={-80}>
                 Sleek-Fence

@@ -83,6 +83,18 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
               </a>
          
         </li>
+
+        <li className="semiBold font15 pointer">
+        <a href="/book-appointment"  
+         onClick={() => toggleSidebar(!sidebarOpen)}
+         activeClass="active"
+         className="whiteColor"
+         style={{ padding: "10px 15px" }}
+        >
+                Book Appointment
+              </a>
+         
+        </li>
       </UlStyle>
      
     </Wrapper>

@@ -48,6 +48,11 @@ import g39 from "../../assets/img/gallery/fence/g22.jpg";
 import g40 from "../../assets/img/gallery/fence/g27.jpg";
 import g41 from "../../assets/img/gallery/fence/g28.jpg";
 import g42 from "../../assets/img/gallery/fence/g29.jpg";
+import g43 from "../../assets/img/gallery/ralling/g55.jpg";
+import g44 from "../../assets/img/gallery/ralling/g58.jpg";
+import g45 from "../../assets/img/gallery/ralling/g59.jpg";
+import g46 from "../../assets/img/gallery/ralling/g60.jpg";
+import g47 from "../../assets/img/gallery/ralling/g61.jpg";
 import Dots from "../../assets/svg/Dots";
 
 import LightGallery from 'lightgallery/react';
@@ -106,6 +111,11 @@ const images = [
   { id: 40, src: g40, alt: "Image 4" },
   { id: 41, src: g41, alt: "Image 4" },
   { id: 42, src: g42, alt: "Image 4" },
+  { id: 43, src: g43, alt: "Image 4" },
+  { id: 44, src: g44, alt: "Image 4" },
+  { id: 45, src: g45, alt: "Image 4" },
+  { id: 46, src: g46, alt: "Image 4" },
+  { id: 47, src: g47, alt: "Image 4" },
 
 ];
 

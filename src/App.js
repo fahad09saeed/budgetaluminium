@@ -7,6 +7,7 @@ import Sunrooms from "./components/Sections/Sunrooms.jsx";
 import Rallings from "./components/Sections/Rallings.jsx";
 import Sleekfence from "./components/Sections/Sleekfence.jsx";
 import HomeRenovation from "./components/Sections/HomeRenovation.jsx";
+import Appointment from "./components/Sections/Appointment.jsx";
 // Screens
 import Landing from "./screens/Landing.jsx";
 
@@ -27,11 +28,10 @@ export default function App() {
         <Route path="/rallings-fence-gates" element={<Rallings />} />
         <Route path="/sleek-fence" element={<Sleekfence />} />
         <Route path="/home-renovation" element={<HomeRenovation />} />
+        <Route path="/book-appointment" element={<Appointment />} />
       </Routes>
     </Router>
-      <div>
-            <Chatbot />
-        </div>
+    
     </>
   );
 }

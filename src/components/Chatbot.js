@@ -8,47 +8,66 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([
     { text: "Hello! How can I assist you?", sender: "bot" },
   ]);
-  const [input, setInput] = useState("");
-
+  
   const toggleChat = () => {
     setIsOpen(!isOpen);
   };
 
+  const [step, setStep] = useState(0);
   const [formData, setFormData] = useState({
-    name: '', email: '', phone: '', service: '', appointment_date: '', message: ''
+    name: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: "",
+    appointment: "",
   });
-  const [response, setResponse] = useState('');
 
-  const handleChange = e => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const [botResponse, setBotResponse] = useState("");
+
+  const questions = [
+    { key: "name", text: "What is your name?" },
+    { key: "email", text: "What is your email?" },
+    { key: "phone", text: "What is your phone number?" },
+    { key: "service", text: "What service do you need?" },
+    { key: "message", text: "Any specific message or requirements?" },
+    { key: "appointment", text: "When would you like to book an appointment?" },
+  ];
+
+  
+
+  const handleResponse = (event) => {
+    setFormData({ ...formData, [questions[step].key]: event.target.value });
   };
 
-  const handleSubmit = async e => {
-    e.preventDefault();
-    try {
-      const res = await axios.post('http://localhost:5000/api/inquiry', formData);
-      setResponse(res.data.message);
-    } catch (error) {
-      console.error('Error:', error);
+  const nextStep = () => {
+    if (step < questions.length - 1) {
+      setStep(step + 1);
+    } else {
+      submitInquiry();
     }
   };
-  const sendMessage = async () => {
-    if (input.trim() === "") return;
-    const userMessage = { text: input, sender: "user" };
-    setMessages([...messages, userMessage]);
 
+
+  const submitInquiry = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/chat", {
-        message: input,
-      });
-      const botMessage = { text: response.data.reply, sender: "bot" };
-      setMessages((prevMessages) => [...prevMessages, botMessage]);
+      await axios.post("http://localhost:5000/api/inquiry", formData);
+      alert("Inquiry submitted! Check your email for confirmation.");
     } catch (error) {
-      console.error("Error fetching response:", error);
+      console.error("Error submitting inquiry:", error);
     }
-
-    setInput("");
   };
+
+  const askAI = async (userMessage) => {
+    try {
+      const response = await axios.post("http://localhost:5000/api/ai-response", { userMessage });
+      setBotResponse(response.data.reply);
+    } catch (error) {
+      console.error("AI Response Error:", error);
+    }
+  };
+
+  
 
   return (
     <div className="chatbot-container">
@@ -61,41 +80,21 @@ const Chatbot = () => {
             <h3>Live Chat</h3>
           </div>
           <div className="chat-body">
-            {messages.map((msg, index) => (
-              <div key={index} className={`message ${msg.sender}`}>
-                {msg.text}
-              </div>
-            ))}
+          <p>{questions[step].text}</p>
+      <input type="text" value={formData[questions[step].key]} onChange={handleResponse} />
+      <button onClick={nextStep}>Next</button>
+
+      <h3>Any information you need?</h3>
+      <input type="text" placeholder="Ask anything..." onBlur={(e) => askAI(e.target.value)} />
+      {botResponse && <p><strong>AI:</strong> {botResponse}</p>}
           </div>
           <div className="chat-footer">
-          <form onSubmit={handleSubmit}>
-        <input type="text" name="name" placeholder="Name" onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
-        <input type="text" name="phone" placeholder="Phone" onChange={handleChange} required />
-        <input type="text" name="service" placeholder="Service Needed" onChange={handleChange} required />
-        <input type="date" name="appointment_date" onChange={handleChange} />
-        <textarea name="message" placeholder="Ask a question..." onChange={handleChange}></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      {response && <p><strong>AI Response:</strong> {response}</p>}
+         
+      
       <div>
-      {messages.map((message, index) => (
-        <div key={index}>
-          <h3>{message.role}</h3>
-          <p>{message.content}</p>
-        </div>
-      ))}
+     
     </div>
-            {/* <input
-              type="text"
-              placeholder="Type a message..."
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-            />
-            <button onClick={sendMessage}>
-              <FaPaperPlane />
-            </button> */}
+        
           </div>
         </div>
       )}

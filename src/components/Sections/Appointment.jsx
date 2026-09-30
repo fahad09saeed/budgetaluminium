@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 // Sections
 import TopNavbar from "../Nav/TopNavbar";
-import Header from "./Header";
 import Footer from "./Footer";
 // Styled Components
 const Container = styled.div`

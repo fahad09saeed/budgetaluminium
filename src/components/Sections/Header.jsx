@@ -3,8 +3,6 @@ import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
 // Assets
-import HeaderImage from "../../assets/img/header-img.png";
-import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 import Vimeo from "@u-wave/react-vimeo"
 export default function Header() {
@@ -36,18 +34,7 @@ export default function Header() {
           video="https://vimeo.com/799226493/3439853f00"
           className="radius8"
         />
-      {/* </VideoContainer> */}
-          {/* <QuoteWrapper className="flexCenter darkBg radius8">
-            <QuotesWrapper>
-              <QuotesIcon />
-            </QuotesWrapper>
-            <div>
-              <p className="font15 whiteColor">
-                <em>We are making people dreams true by providing quality services and materials..</em>
-              </p>
-              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>CEO Budget Aluminium</p>
-            </div>
-          </QuoteWrapper> */}
+    
           <DotsWrapper>
             <Dots />
           </DotsWrapper>
@@ -126,31 +113,7 @@ const ImageWrapper = styled.div`
     justify-content: center;
   }
 `;
-const Img = styled.img`
-  @media (max-width: 560px) {
-    width: 80%;
-    height: auto;
-  }
-`;
-const QuoteWrapper = styled.div`
-  position: absolute;
-  left: 0;
-  bottom: 50px;
-  max-width: 330px;
-  padding: 30px;
-  z-index: 99;
-  @media (max-width: 960px) {
-    left: 20px;
-  }
-  @media (max-width: 560px) {
-    bottom: -50px;
-  }
-`;
-const QuotesWrapper = styled.div`
-  position: absolute;
-  left: -20px;
-  top: -10px;
-`;
+
 const DotsWrapper = styled.div`
   position: absolute;
   right: -100px;

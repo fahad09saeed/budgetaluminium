@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 // Sections
 import TopNavbar from "../Nav/TopNavbar";
-import Header from "./Header";
 import Footer from "./Footer";
 import '../../style.css';
 import HeaderImage from "../../assets/img/windows.webp";
@@ -13,7 +12,6 @@ import g3 from "../../assets/img/awning3.webp";
 import g4 from "../../assets/img/awning4.webp";
 import Dots from "../../assets/svg/Dots";
 
-import LightGallery from 'lightgallery/react';
 
 // import styles
 import 'lightgallery/css/lightgallery.css';
@@ -22,20 +20,7 @@ import 'lightgallery/css/lg-thumbnail.css';
 
 
 
-// import plugins if you need
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import lgZoom from 'lightgallery/plugins/zoom';
 
-const images = [
-  { id: 1, src: g1, alt: "Image 1" },
-  { id: 2, src: g2, alt: "Image 2" },
-  { id: 3, src: g3, alt: "Image 3" },
-  { id: 4, src: g4, alt: "Image 4" },
-];
-
-const onInit = () => {
-  console.log('lightGallery has been initialized');
-};
 
 const Maintenance = () => {
   return (
@@ -242,12 +227,6 @@ const HeaderP = styled.div`
     max-width: 100%;
   }
 `;
-const BtnWrapper = styled.div`
-  max-width: 190px;
-  @media (max-width: 960px) {
-    margin: 0 auto;
-  }
-`;
 const GreyDiv = styled.div`
   width: 30%;
   height: 700px;
@@ -286,25 +265,7 @@ const Img = styled.img`
     height: auto;
   }
 `;
-const QuoteWrapper = styled.div`
-  position: absolute;
-  left: 0;
-  bottom: 50px;
-  max-width: 330px;
-  padding: 30px;
-  z-index: 99;
-  @media (max-width: 960px) {
-    left: 20px;
-  }
-  @media (max-width: 560px) {
-    bottom: -50px;
-  }
-`;
-const QuotesWrapper = styled.div`
-  position: absolute;
-  left: -20px;
-  top: -10px;
-`;
+
 const DotsWrapper = styled.div`
   position: absolute;
   right: -100px;

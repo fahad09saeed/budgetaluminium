@@ -1,5 +1,4 @@
 import React from "react";
-import Chatbot from "./components/Chatbotss.js";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PatioCovers from "./components/Sections/PatioCovers.jsx"

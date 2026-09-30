@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import React from "react";
 // Sections
 import TopNavbar from "../components/Nav/TopNavbar";

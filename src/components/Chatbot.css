@@ -70,7 +70,10 @@
     border: 1px solid #eaeaea;
     outline: none;
   }
-  
+ 
+  .messagebox{
+    width: 100%;
+  }
   .chat-footer button {
     background: #007bff;
     color: white;
